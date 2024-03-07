@@ -165,9 +165,8 @@ address {
 
 .advantages-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
-    padding-right: 156px;
-    padding-left: 156px;
 }
 
 .advantages-list-item {
@@ -207,9 +206,8 @@ address {
 
 .team-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
-    padding-right: 156px;
-    padding-left: 156px;
 }
 
 .team-list-item {
@@ -258,8 +256,6 @@ address {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    padding-right: 156px;
-    padding-left: 156px;
 }
 
 .portfolio-list-item {
