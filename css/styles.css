@@ -4,16 +4,55 @@ body {
     background-color: #fff;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 a {
     text-decoration: none;
 }
 
-ul, ol {
-    list-style: none;
-}
-
 button {
     cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;  
+    margin-left: 0 auto; 
+}
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
 }
 
 .header-logo {
@@ -24,10 +63,16 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .header-logo-part {
     color: #2e2f42;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-menu-link {
@@ -36,6 +81,8 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
 }
 
 .header-menu-link:hover,
@@ -44,7 +91,12 @@ button {
 }
 
 .contacts {
-    font-style: normal;
+    margin-left: auto;
+}
+
+.contacts-list {
+    display: flex;
+    gap: 40px;
 }
 
 .contacts-link {
@@ -60,7 +112,9 @@ button {
     color: #404bbf;
 }
 
-.hero {
+.hero-wrap {
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-color: #2e2f42;
 }
 
@@ -71,6 +125,9 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    max-width: 496px;
 }
 
 .hero-button {
@@ -80,6 +137,10 @@ button {
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4d5ae5;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .hero-button:hover,
@@ -87,12 +148,42 @@ button {
     background: #404bbf;
 }
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 24px;
+    padding-right: 156px;
+    padding-left: 156px;
+}
+
+.advantages-list-item {
+    width: calc((100% - 3 * 24px) / 4);
+} 
+
 .advantages-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .advantages-text {
@@ -114,10 +205,21 @@ button {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    padding-right: 156px;
+    padding-left: 156px;
 }
 
 .team-list-item {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    padding-bottom: 32px;
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .team-subtitle {
@@ -127,6 +229,8 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .team-text {
@@ -145,6 +249,28 @@ button {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    padding-right: 156px;
+    padding-left: 156px;
+}
+
+.portfolio-list-item {
+    width: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-text-wrap {
+    border-top: none;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
 }
 
 .portfolio-subtitle {
@@ -153,6 +279,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -164,6 +291,12 @@ button {
 
 .footer {
     background-color: #2e2f42;
+}
+
+.footer-wrap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 156px;
 }
 
 .footer-logo {
@@ -185,4 +318,6 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    margin-top: 16px;
+    max-width: 264px;
 }
