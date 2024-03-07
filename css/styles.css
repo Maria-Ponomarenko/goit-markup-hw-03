@@ -110,11 +110,7 @@ address {
 
 .hero {
     background-color: #2e2f42;
-}
-
-.hero-wrap {
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -298,9 +294,6 @@ address {
 
 .footer {
     background-color: #2e2f42;
-}
-
-.footer-wrap {
     padding: 100px 0;
 }
 
